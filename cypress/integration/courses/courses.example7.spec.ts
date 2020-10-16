@@ -7,7 +7,9 @@ describe('Example test', () => {
         const colours =['Orange', 'Blue']
         cy.get('#search_query_top').type('Faded Short Sleeve T-shirts')
         cy.get('#searchbox > .btn').click()
-        cy.get('.page-heading').should('contain.text', '"Faded Short Sleeve T-shirts"')
+        cy.get('.page-heading').invoke('text').then((text)=> {
+            expect(text).to.contain('"Faded Short Sleeve T-shirts"')
+        })
         cy.get('.heading-counter').should('contain.text', '1 result has been found.')
         cy.get('.lnk_view > span').click()
         cy.get('.button-plus').click()
