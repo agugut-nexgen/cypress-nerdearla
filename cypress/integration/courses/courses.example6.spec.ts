@@ -1,4 +1,4 @@
-import coursesHelper from '../helpers/courses/courses.helper';
+import coursesHelper from '../../support/helpers/courses/courses.helper';
 
 describe('Example test', () => {
     let itemNames: string[];
