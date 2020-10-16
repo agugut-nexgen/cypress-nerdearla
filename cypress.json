@@ -1,0 +1,8 @@
+{
+  "ignoreTestFiles": ["**/*.helper.ts"],
+  "baseUrl": "http://todomvc.com",
+  "testFiles": ["**/*.ts", "**/*.ts"],
+  "env": {
+    "DEBUG_LEVEL": "DEBUG"
+  }
+}
